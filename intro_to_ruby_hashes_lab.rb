@@ -24,6 +24,6 @@ end
 
 def update_counting_hash(hash, key)
   return hash[key] # given a hash an a key as parameters, return an updated hash
-  return hash[key: 1]# if the provided key is not present in the hash, add it and assign it to the value of 1
+  return hash["key" => 1]# if the provided key is not present in the hash, add it and assign it to the value of 1
   return hash[key] += 1# if the provided key is present, increment its value by 1
 end
